@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: american-predictor
-        image: marcos30004347/american-predictor:v1.0.1
+        image: marcos30004347/american-predictor:v1.1.0
         env:
         - name: MODEL_VERSION
           value: "v4.0.0"
