@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - name: american-predictor
-        image: marcos30004347/american-predictor:v1.0.0
+        image: marcos30004347/american-predictor:v1.0.1
         env:
         - name: MODEL_VERSION
-          value: "v1.0.0"
+          value: "v4.0.0"
         ports:
         - containerPort: 5022
