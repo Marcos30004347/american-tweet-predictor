@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: american-predictor-deployment
+spec:
+  selector:
+    matchLabels:
+      app: american-predictor-deployment
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: american-predictor-deployment
+    spec:
+      containers:
+      - name: american-predictor
+        image: marcos30004347/american-predictor:v1.0.0
+        env:
+        - name: MODEL_VERSION
+          value: "v1.0.0"
+        ports:
+        - containerPort: 5022
