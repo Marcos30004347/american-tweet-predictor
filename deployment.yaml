@@ -19,6 +19,6 @@ spec:
         - name: MODEL_VERSION
           value: "v4.0.0"
         - name: SERVER_VERSION
-          value: "v1.1.0"
+          value: "v1.2.0"
         ports:
         - containerPort: 5022
